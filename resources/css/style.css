@@ -6,3 +6,151 @@
   5. Component Styles
   6. Page Styles
 ======================================== */
+
+/* Global Styles 
+========================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  color: #9b9b9b;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/* Typography Styles 
+========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;
+}
+
+h1 {
+  font-size: calc(100px / 1.5);
+  line-height: 0.85;
+}
+
+h2 {
+  font-size: calc(65px / 1.5);
+  margin-top: 10px;
+  line-height: 0.85;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Structure Styles 
+======================================== */
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+/* Modules Styles 
+======================================== */
+
+/* Site Navigation */
+
+.site-navigation {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 30px 1em;
+}
+
+.site-header-left {
+  display: inline-block;
+}
+
+.site-header-left li {
+  line-height: 0;
+}
+
+.site-header-right {
+  display: inline-block;
+  float: right;
+}
+
+.site-header-right li,
+.footer-right li {
+  display: inline;
+}
+
+.site-header-right li a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Media Queries */
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: calc(65px / 1.25);
+  }
+
+  h2 {
+    font-size: calc(65px / 1.25);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+}
